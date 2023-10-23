@@ -1,0 +1,18 @@
+Hash,author,KC-Tags,MF-Tags,AM-Tags
+0fbd39cf7ffe3b6a787b66b672d21b84e4675352,David Howells,no-tag-changed,[('Added' | 'build') | ('Modify' | 'build')],no-tag-changed
+a0588015deab1844261b27a67ae6f5b910fe2830,Anton Blanchard,no-tag-changed,[('Added' | 'build') | ('Added' | 'ifdef')],no-tag-changed
+f036b368196263f648bede42bbbe1c1e6e834d10,Anton Blanchard,no-tag-changed,[('Modify' | 'build')],no-tag-changed
+12cc4b3827f8cc5973f86330ccc9d9656a31bfa8,Srinivas Pandruvada,[('Added' | 'Menu')],[('Added' | 'build')],no-tag-changed
+faf499dfccfd88d842164078917e7b6aae9a3cdb,Heiko Carstens,no-tag-changed,[('Modify' | 'build') | ('Modify' | 'Mapping')],no-tag-changed
+a0974e6e217aead196033d72f898e2acb575304d,Will Deacon,no-tag-changed,[('Added' | 'ifdef') | ('Added' | 'build')],no-tag-changed
+474318cabce4feac10fa79e69c2aa330415abb01,Thierry Reding,no-tag-changed,no-tag-changed,no-tag-changed
+a4412050149fb314420ecec8f9b9f8b3c9515ecf,Christian Daudt,no-tag-changed,[('Remove' | 'build') | ('Modify' | 'Mapping')],no-tag-changed
+5d48217210a0ae4a08953b7e3db95ed5a992673d,Shawn Guo,no-tag-changed,[('Modify' | 'build') | ('Modify' | 'Mapping')],no-tag-changed
+b2ca8c895e711b10d6f28b26248358bfa2f354ad,Alistair Popple,no-tag-changed,[('Added' | 'Mapping')],no-tag-changed
+cbf8a358be27ceecea5bd44cf82ab01683fcc90c,Tiejun Chen,no-tag-changed,[('Added' | 'build') | ('Added' | 'ifdef')],no-tag-changed
+721cb59e9d95eb7f47ec73711ed35ef85e1ea1ca,Benjamin Herrenschmidt,no-tag-changed,[('Added' | 'build')],no-tag-changed
+fff6540cbcb56a6ae92d4fd4b0864c8d13a8f932,Richard Weinberger,no-tag-changed,[('Remove' | 'build') | ('Remove' | 'ifdef') | ('Modify' | 'ifdef') | ('Modify' | 'build')],no-tag-changed
+5551a34e5aeab868f8d37f70d8754868921b4ee5,H. Peter Anvin,no-tag-changed,[('Added' | 'build')],no-tag-changed
+8b3b005d675726e38bc504d2e35a991e55819155,H. Peter Anvin,no-tag-changed,[('Modify' | 'build') | ('Remove' | 'build') | ('Added' | 'build')],no-tag-changed
+d7ec435fdd03cfee70dba934ee384acc87bd6d00,David Howells,no-tag-changed,[('Added' | 'build') | ('Modify' | 'Mapping') | ('Modify' | 'build')],no-tag-changed
+7ac181568342ec618d4da1ab03c2babcaa7ee84f,Jan Beulich,no-tag-changed,[('Remove' | 'build') | ('Modify' | 'build') | ('Modify' | 'Mapping')],no-tag-changed

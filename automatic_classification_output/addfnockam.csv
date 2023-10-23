@@ -1,0 +1,10 @@
+Hash,author,KC-Tags,MF-Tags,AM-Tags
+554b0004d0ec4fbd11e08668dfc400f211e8d5c5,Kevin Hilman,[('Added' | 'Feature') | ('Added' | 'Default') | ('New' | 'Depends')],no-tag-changed,no-tag-changed
+d10d2d485497cdc62a7660cd981f8f1ae0dffe7d,Ben Dooks,[('Added' | 'Select') | ('Remove' | 'Feature') | ('Remove' | 'Default') | ('Added' | 'Feature')],no-tag-changed,no-tag-changed
+d90c3eb31535e0a1b7b5528ad2011e26f4b9a79a,Mark Salter,[('Added' | 'Feature') | ('Added' | 'Depends')],no-tag-changed,no-tag-changed
+a872013d6d03ab63736a01dcd9747580be3a6b70,Will Deacon,[('Added' | 'Feature')],no-tag-changed,no-tag-changed
+3b218e3a21ccec183472015f1d7168400b187a58,Jaegeuk Kim,[('Added' | 'Feature') | ('New' | 'Depends')],no-tag-changed,no-tag-changed
+c527c3b939cdb2e75777fe690e067b6e199c44fc,Rohit Vaswani,[('New' | 'Select') | ('Added' | 'Select') | ('Added' | 'Feature') | ('Added' | 'Depends') | ('Added' | 'Default')],no-tag-changed,no-tag-changed
+69f0554ec261fd686ac7fa1c598cc9eb27b83a80,Christian Ruppert,[('Added' | 'Feature')],no-tag-changed,no-tag-changed
+7c105b63bd9887f10ec281b0020492e7c774d0fc,Anton Blanchard,[('Added' | 'Feature') | ('New' | 'Default')],no-tag-changed,no-tag-changed
+962bc221c3b1d63a461f8065bfb37122ce660119,Anton Blanchard,[('Added' | 'Feature') | ('Modify' | 'Feature') | ('Modify' | 'Default')],no-tag-changed,no-tag-changed

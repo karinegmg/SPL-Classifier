@@ -19,38 +19,9 @@ def getPatterns(queryList):
             if(aux == len(queryList)):
                 count = count + 1
                 print(key)
-                #print('match: ', v)
-    result = '{} commits ({:.2f} %) apresentam as modificações classificadas com as tags {}'.format(count, (count/qtd_remainingCommits)*100, queryList)
+    result = '{} commits ({:.2f} %) present the modification classified as the following tags: {}'.format(count, (count/qtd_remainingCommits)*100, queryList)
         
     return result
-
-def getPatternsForSpace(spaceName, queryTagsFm, queryTagsCk, queryTagsAm):
-    file_tags = open(fileName, 'r')
-    count = 0
-    #dictTags = {}
-    dictAm = {}
-    dictFM = {}
-    dictCK = {}
-    for commit in file_tags:
-        lines = commit.split(',')
-        hashCommit = lines[0]
-        tags = lines[2] + lines[3] + lines[4]
-        dictAm[hashCommit] = lines[4]
-        dictFM[hashCommit] = lines[2]
-        dictCK[hashCommit] = lines[3]
-        #dictTags[hashCommit] = tags
-    
-    if('AM' in spaceName):
-        for key, v in dictAm.items():
-            aux = 0
-            for q in queryTagsAm:
-                if(q in v):
-                    aux = aux + 1
-                if(aux == len(queryTagsAm)):
-                    count = count + 1
-                #print('match: ', v)
-    result = '{} commits ({:.2f} %) apresentam as modificações classificadas com as tags {}'.format(count, (count/qtd_remainingCommits)*100, queryList)
-  
 
 '''
 Change Type = Added, Modify, Remove, New

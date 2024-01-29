@@ -5,10 +5,10 @@ exclusion criteria:
 '''
 
 from pydriller import RepositoryMining, GitRepository
-from getCommits import getListCommits
+from commits import getCommits
 
 dictListaC = {}
-listaCommits = getListCommits()
+listaCommits = getCommits()
 pathLinux = '../../spl_repositorios/linux'
 fileInName = 'tags_patterns_with_hashes.csv'
 fileOutName = 'tags_patterns_merge_large.csv'
@@ -19,7 +19,6 @@ hashes = open(fileInName, 'r')
 for commit in RepositoryMining(pathLinux, only_commits=listaCommits).traverse_commits():
     if (commit.merge == True):
         dictListaC[(commit.hash)[0:10]] = "merge scenario"
-        #print(dictListaC[commit.hash[0:10]])
 
     elif(len(commit.modifications) > 20):
         dictListaC[(commit.hash)[0:10]] = "> 20 modified files"

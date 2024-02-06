@@ -47,3 +47,4 @@ AddFeat&Mapp&Asset&DepCA,['AddedFeature' - 'AddedMapping' - 'NewDepends' - 'addA
 AddFea&Def&Dep&CA,['AddedFeature' - 'NewDefault' - 'NewDepends' - 'changeAsset' - 'no-ck-tag-changed'],4,2,1,"50,00%","66,67%"
 Add&NewDepFeatDefCA,['AddedDepends' - 'AddedFeature' - 'NewDefault' - 'NewDepends' - 'changeAsset' - 'no-ck-tag-changed'],5,2,2,"40,00%","66,67%"
 Add&NewSel,['AddedSelect' - 'NewSelect' - 'no-am-tag-changed' - 'no-ck-tag-changed'],5,4,0,"80,00%","80,00%"
+ModFeat&RemDepFeat&CA,['ModifyFeature' - 'RemoveDepends' - 'RemoveFeature' - 'changeAsset' - 'no-ck-tag-changed'],6,3,	3, "50,00%", "100,00%"

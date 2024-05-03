@@ -1,13 +1,10 @@
 from pydriller import RepositoryMining
-import os
-from dotenv import load_dotenv
 
-load_dotenv()
-repositoryPath = os.getenv("REPOSITORY_PATH")
 
-def getFeaturesList():
+def getFeaturesList(repositoryPath):
     featuresList = open('features.csv', 'a')
     features = []
+    featureName = ''
     for commit in RepositoryMining(repositoryPath).traverse_commits():
     
         for modification in commit.modifications:

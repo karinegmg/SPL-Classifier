@@ -15,24 +15,25 @@ linuxFeatures = to get easier the extraction of the Linux features
 '''
 dt1 = datetime.datetime(2017, 3, 8, 0, 0, 0)
 dt2 = datetime.datetime(2017, 12, 31, 0, 0, 0)
-commitsList = getCommits()
-singleCommit = os.getenv("SINGLE_COMMIT")
-linuxFeatures = getLinuxFeatures()
+#commitsList = getCommits()
+#singleCommit = str(os.getenv("SINGLE_COMMIT"))
+#linuxFeatures = getLinuxFeatures()
 
 load_dotenv()
-features = getFeaturesList()
-outputPathName = os.getenv("OUTPUT_FILE")
+pathRepository = str(os.getenv("REPOSITORY_PATH"))
+print(pathRepository)
+features = getFeaturesList(pathRepository)
+outputPathName = str(os.getenv("OUTPUT_FILE"))
 outputFile = open(outputPathName,'w')
 
 commitResultsList = []
 commitResultsList.append('Hash,date,KC-Tags,MF-Tags,AM-Tags\n')
 
-pathRepository = os.getenv("REPOSITORY_PATH")
 
 GR = GitRepository(pathRepository)
 
-for commit in RepositoryMining(pathRepository, only_commits=commitsList).traverse_commits():
-    
+#for commit in RepositoryMining(pathRepository, only_commits=commitsList).traverse_commits():
+for commit in RepositoryMining(pathRepository).traverse_commits():
     kconfig_commit_tags = []
     makefile_commit_tags = []
     am_commit_tags = []

@@ -1,0 +1,4 @@
+REPOSITORY_PATH = "Linux"
+SINGLE_COMMIT = "d86b9f94c6599ef2e8e9c855f3dfb4cfcfddc019"
+COMMIT_LIST = "commitListExample.csv"
+OUTPUT_FILE = "linuxResultsTest.csv"

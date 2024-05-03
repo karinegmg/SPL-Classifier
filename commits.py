@@ -3,7 +3,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-commitListPath = os.getenv("COMMIT_LIST")
+commitListPath = str(os.getenv("COMMIT_LIST"))
+
+#commitListPath = 'commitListExample.csv'
+
 def getCommits():
     commitListFile = open(commitListPath, 'r')
     commits = []

@@ -24,7 +24,7 @@ It is designed to handle repositories such as the Linux kernel and projects.
     ```bash
     pip install -r requirements.txt
 3. **Configure your environment**
-   Open the .envExample file, and add the SPL repository link you want to classify automatically in the REPOSITORY_PATH variable:
+   Open the .envExample file (path: utils/env/), and add the SPL repository link you want to classify automatically in the REPOSITORY_PATH variable:
      ```bash
     REPOSITORY_PATH="https://github.com/Dasharo/coreboot.git"
 

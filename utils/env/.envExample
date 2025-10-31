@@ -1,0 +1,2 @@
+REPOSITORY_PATH = "https://github.com/torvalds/linux.git"
+OUTPUT_FILE = "splChangesOutput.csv"

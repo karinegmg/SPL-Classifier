@@ -1,11 +1,7 @@
-import os
-from dotenv import load_dotenv
+from utils.utils import *
 
-load_dotenv()
-
-commitListPath = str(os.getenv("COMMIT_LIST"))
-
-#commitListPath = 'commitListExample.csv'
+commitListFile = getVarFromEnv(COMMIT_LIST)
+commitListPath = f"{CURRENT_PATH}/config_files/{commitListFile}"
 
 def getCommits():
     commitListFile = open(commitListPath, 'r')

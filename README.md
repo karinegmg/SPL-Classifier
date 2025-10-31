@@ -5,7 +5,7 @@ This repository extends the original [SPL-Classification project](https://github
 ## Overview
 
 The tool automates the classification of commits based on the Software Product Line (SPL) taxonomy.  
-It is designed to handle repositories such as the Linux kernel and projects.
+It is designed to handle repositories such as the Linux kernel and similar projects.
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ It is designed to handle repositories such as the Linux kernel and projects.
 2. **Install the required dependencies**
     ```bash
     pip install -r requirements.txt
-3. **Configure your environment**
+3. **Configure your environment:**
    Open the .envExample file (path: utils/env/), and add the SPL repository link you want to classify automatically in the REPOSITORY_PATH variable:
      ```bash
     REPOSITORY_PATH="https://github.com/Dasharo/coreboot.git"

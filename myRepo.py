@@ -1,38 +1,30 @@
 from pydriller import RepositoryMining, GitRepository
 import datetime
-from splClassifier import SPLClassifier
-from features import getFeaturesList, getLinuxFeatures
-from commits import getCommits
-import os
-from dotenv import load_dotenv
+from splclassifier import SPLClassifier
+from utils.features import getFeaturesList, getLinuxFeatures
+from utils.utils import *
 
 '''
-Optional parameters to use in RepositoryMining class: 
-dt1 and dt2 = only commits after dt1 and up dt2 will be analyzed, 
-commitList = only these commits will be analyzed,
-singleCommit = only this commit will be analyzed,
 linuxFeatures = to get easier the extraction of the Linux features
 '''
-dt1 = datetime.datetime(2017, 3, 8, 0, 0, 0)
-dt2 = datetime.datetime(2017, 12, 31, 0, 0, 0)
-#commitsList = getCommits()
-#singleCommit = str(os.getenv("SINGLE_COMMIT"))
-#linuxFeatures = getLinuxFeatures()
 
-load_dotenv()
-pathRepository = str(os.getenv("REPOSITORY_PATH"))
+features = []
+pathRepository = getVarFromEnv(REPOSITORY_PATH)
 print(pathRepository)
-features = getFeaturesList(pathRepository)
-outputPathName = str(os.getenv("OUTPUT_FILE"))
+
+if ("torvalds/linux.git" in pathRepository):
+    linuxFeatures = getLinuxFeatures()
+else:
+    features = getFeaturesList(pathRepository)
+
+outputPathName = getVarFromEnv(OUTPUT_FILE)
 outputFile = open(outputPathName,'w')
 
 commitResultsList = []
-commitResultsList.append('Hash,date,KC-Tags,MF-Tags,AM-Tags\n')
-
+commitResultsList.append('Hash,author,date,KC-Tags,MF-Tags,AM-Tags\n')
 
 GR = GitRepository(pathRepository)
 
-#for commit in RepositoryMining(pathRepository, only_commits=commitsList).traverse_commits():
 for commit in RepositoryMining(pathRepository).traverse_commits():
     kconfig_commit_tags = []
     makefile_commit_tags = []
@@ -99,7 +91,7 @@ for commit in RepositoryMining(pathRepository).traverse_commits():
         am_commit_tags = str(am_commit_tags).replace(',',' |')
     else:
         am_commit_tags = 'no-am-tag-changed'
-    mountStr = '{},{},{},{},{}\n'.format(commit.hash, commit.committer_date.date, kconfig_commit_tags, makefile_commit_tags, am_commit_tags)
+    mountStr = '{},{},{},{},{},{}\n'.format(commit.hash, commit.author.name, commit.committer_date, kconfig_commit_tags, makefile_commit_tags, am_commit_tags)
     commitResultsList.append(mountStr)
 
 outputFile.writelines(commitResultsList)
